@@ -1,8 +1,8 @@
-# Prolog Programming Assignment
+# Prolog Programming 
 
 ## Motivation
 Artificial Intelligence has gotten more attention in recent years. There are more AI tools available to the public than ever before: Alexa, Siri, Ericka, etc. not to mention services like Google Cloud Machine Learning, Deep Learning on AWS, IBM Cognitive, Microsoft Azure Machine Learning, etc. One of the early attempts to deal with AI was the development of “AI specific” languages. This is the case of Prolog, a declarative language that stores facts and rules (and other constructs as well), and has an interface where the user can query and make questions that Prolog’s engine will answer inferring from the facts and rules that where stored.
-Another motivation for this assignment is to expose students to a completely different paradigm of programming. Up to this moment, most of the students have been working and coding with imperative and object-oriented languages, and a declarative language should pose a new challenge, as it requires a different way to think.
+Another motivation is to expose coders to a completely different paradigm of programming. Up to this moment, most of you have been working and coding with imperative and object-oriented languages, and a declarative language should pose a new challenge, as it requires a different way to think.
 
 ## Description
 Write a Prolog program that stores information about geometric objects. You must construct rules for geometric objects. The objects to construct are:
@@ -26,37 +26,28 @@ Is the triangle acute? |	`acute(point2d(x,y), point2d(x,y), point2d(x,y))`
 Is the triangle obtuse?	| `obtuse(point2d(x,y), point2d(x,y), point2d(x,y))`
 Do the given four points define a square? | `square(point2d(x,y), point2d(x,y), point2d(x,y), point2d(x,y))`
 
-## Assignment Requirements
--	Good programming practices
-  - Meaningful atoms and rules naming
--	This is a strictly individual assignment
--	A query file will be provided for you to test your program, this test (and additional ones) will be used for grading.
+## Requirements
+-	A query file will be provided for you to test your program, this test (and additional ones) will be used 
 -	Use the rules names given in the table above.
 
 ## Delivery Method
-You will push your final version to the repository of the assignment before the deadline, your program must be in a file named `fourpoints.pl`  **[You MUST name your program this, failure will result in zero grade]**
+your program must be in a file named `fourpoints.pl` 
 
-## Assessment and Grading
-Assessment will consider the following factors in the grading of the project:
--	Adherence to instructions
--	Correct function of the program
--	No runtime errors and no warnings
--	Late deliveries will have a zero mark
--	Plagiarism will have a double zero mark (in addition to losing 10% of your final grade, you will lose an additional 10% of their final grade), besides there will be a report filed in the students’ academic record. Make sure to read the ECS Department Academic Integrity Guidelines in the Course Syllabus
+
 -	Each program will be loaded in Prolog and tested to check if the functions are in working order.
 -	The programs will be “automatically” run using a bash shell script, it is important that you follow the instructions, so the script runs smoothly.
 
 ## Extra Challenge
-- Use Prolog more advance features in this project: Lists, IO and Structures. You will need to send the test queries to try your code while grading. (up to 3 extra points)
-- Use points in 3D. You will need to send the test queries to try your code while grading. (up to 5 extra points)
-- To take advantage of the extra credit, you must comply with the given tests first, and those tests must work!
+- Use Prolog more advance features in this project: Lists, IO and Structures. You will need to send the test queries to try your code  
+- Use points in 3D. You will need to send the test queries to try your code 
+- To take advantage of this extra challenget, you must comply with the given tests first, and those tests must work!
 
 ## Instructions for Testing
 A file named `test.pl` is provided. You will need to append this file to the end of your code, create a new file called `full.pl` that contains your code and then the code from `test.pl`, and then run Prolog from the command line:  
 
 `swipl -q -f full.pl -t main > your-output.txt`
 
-The command tells prolog to run quietly using the file `full.pl` and to execute target `main`. The query main will then run each of the queries. Once the process is finished, there will be a file named `your-output.txt` you can then compare this file with another file that is provided: `output.txt` to check if your results are correct. Before turning in your assignment make sure that your file `fourpoints.pl` does not have test code.
+The command tells prolog to run quietly using the file `full.pl` and to execute target `main`. The query main will then run each of the queries. Once the process is finished, there will be a file named `your-output.txt` you can then compare this file with another file that is provided: `output.txt` to check if your results are correct. Before pushing  make sure that your file `fourpoints.pl` does not have test code.
 
 ### Steps
 1. Copy your `fourpoints.pl` file into a new empty file called `full.pl`
@@ -83,7 +74,7 @@ Total tests:      72
 Percentage of tests passed: 100
 ```
 
-This program will tell you the percentage you will get from the unit tests. Most of your grade will come from that percentage. Your code will be reviewed for the assessment and grading criteria.
+This program will tell you the percentage you will get from the unit tests.
 
 ## Recommendation
 
